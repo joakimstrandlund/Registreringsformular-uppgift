@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Booking information</h1>
+    <div class="content1">
+      <form action="https://httpbin.org/anything " method="post" class="content">
+        <div class="container1">
+          <div>
+            <label for="name">Name</label>
+          </div>
+          <input class="name" type="text" name="name" id="name" required />
+
+          <div>
+            <label for="email-login">E-mail</label>
+          </div>
+          <input class="name" type="email" name="email-login" id="email-login" required />
+
+          <div>
+            <label for="login-password">Password</label>
+          </div>
+          <input class="name" type="password" name="login-password" id="login-password" required />
+        </div>
+
+        <div class="container2">
+          <label>Which taxi do you prefer?</label>
+          <div class="row">
+            <input type="radio" name="vehicle" id="taxi" value="taxi" />
+            <label for="taxi">Taxi</label>
+          </div>
+
+          <div class="row">
+            <input type="radio" name="vehicle" id="taxi" value="van" />
+            <label for="taxi">Van</label>
+          </div>
+
+          <div class="row">
+            <input type="radio" name="vehicle" id="taxi" value="tuk-tuk" />
+            <label for="taxi">Tuk Tuk</label>
+          </div>
+
+          <label for="extras">Extras</label>
+
+          <div class="row">
+            <input type="checkbox" name="extras" id="baby-seat" value="baby-seat" />
+            <label for="">Baby Seat</label>
+          </div>
+
+          <div class="row">
+            <input type="checkbox" name="extras" id="stock-tip" value="stock-tip" />
+            <label for="">Stock Tip</label>
+          </div>
+
+          <div class="row">
+            <input type="checkbox" name="extras" id="Wheelchair-access" value="Wheelchair-access" />
+            <label for="">Wheelchair Access</label>
+          </div>
+        </div>
+
+        <div class="container3">
+          <label>Pickup Date/Time</label>
+          <input class="pickup" type="date" id="pickupdate" name="pickupdate" required />
+
+          <label>Select a time</label>
+          <input class="pickup" type="time" id="pickuptime" name="pickuptime" required />
+
+          <label for="pickupplace">Dropoff place</label>
+          <select class="pickup" name="pickupplace" id="pickupplace " required>
+            <option selected="" disabled="" value="">Choose</option>
+            <option value="stockholm">Stockholm</option>
+            <option value="göteborg">Göteborg</option>
+            <option value="malmö">Malmö</option>
+          </select>
+
+          <label class="special" for="special-instructions">Special instructions</label>
+          <textarea name="order-comments" id="order-comments" cols="30" rows="10"></textarea>
+
+          <input class="button" type="submit" value="Submit Booking" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
